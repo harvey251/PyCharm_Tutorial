@@ -120,3 +120,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+def other_secret_function():
+    return (
+        "Harvey Atkin",
+        "Harvey Williams",
+        "Harvey Fuqua",
+        "Mark Harvey",
+        "Dad Harvey",
+        "Tim Harvey"
+        "Almost Horvey"
+        "Incorrectly Spelt Harvie"
+    )
