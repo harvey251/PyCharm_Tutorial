@@ -122,6 +122,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 def other_secret_function():
+    # ToDo: Add "Mr" to all names
+    # ToDo: Change All Harveys to Henry
     return (
         "Harvey Atkin",
         "Harvey Williams",

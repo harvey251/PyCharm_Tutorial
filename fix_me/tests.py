@@ -1,7 +1,6 @@
 from django.test import TestCase
 
 # Create your tests here.
-from PyCharm_Tutorial.settings import other_secret_function
 from fix_me.views.security import secure_function
 
 
@@ -19,3 +18,27 @@ class TestAwesome(TestCase):
         for name in names:
             self.assertTrue("harvey" not in name.lower(),
                              msg=f"WHAT ARE YOU DOING HERE {name}" )
+
+    def test_ricky_is_not_mark(self):
+        name = " Ricky "
+
+        name = name.strip()
+        name = name.lower()
+        name = reversed(name)
+        assert name != "Mark"
+
+    def test_ricky_is_not_mark(self):
+        name = " Frank "
+
+        name = name.strip()
+        name = name.lower()
+        name = reversed(name)
+        assert name != "Mark"
+
+    def test_ricky_is_not_mark(self):
+        name = "KraM "
+
+        name = name.strip()
+        name = name.lower()
+        name = reversed(name)
+        assert name != "Mark"
