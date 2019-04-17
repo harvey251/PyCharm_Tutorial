@@ -19,7 +19,7 @@ class TestAwesome(TestCase):
             self.assertTrue("harvey" not in name.lower(),
                              msg=f"WHAT ARE YOU DOING HERE {name}" )
 
-    def test_ricky_is_not_mark(self):
+    def test_name_is_not_mark(self):
         name = " Ricky "
 
         name = name.strip()
@@ -27,7 +27,6 @@ class TestAwesome(TestCase):
         name = reversed(name)
         assert name != "Mark"
 
-    def test_ricky_is_not_mark(self):
         name = " Frank "
 
         name = name.strip()
@@ -35,7 +34,6 @@ class TestAwesome(TestCase):
         name = reversed(name)
         assert name != "Mark"
 
-    def test_ricky_is_not_mark(self):
         name = "KraM "
 
         name = name.strip()
